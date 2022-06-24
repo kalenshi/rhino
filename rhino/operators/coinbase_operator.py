@@ -50,7 +50,6 @@ class CoinbaseOperator(BaseOperator):
     template_fields = ["api_key", "api_secret", "query"]
     template_fields_renderers = {
         "query": "sql"
-
     }
 
     def __str__(self, **kwargs):

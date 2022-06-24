@@ -58,7 +58,7 @@ x-airflow-common:
   user: "${AIRFLOW_UID:-50000}:0"
 
 services:
-  mysql:
+  mysqlDB:
     image: mysql:5.7.28
     environment:
       - MYSQL_ROOT_PASSWORD=airflow
